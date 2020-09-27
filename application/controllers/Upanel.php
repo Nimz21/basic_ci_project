@@ -7,14 +7,15 @@ class Upanel extends CI_Controller {
 	{
         if(isset($_SESSION['user']))
         {
-         $name['n']=$_SESSION['name'];
          
-         $this->load->view('userpanel',$name);
+         
+         $this->load->view('head/userdashboard');
         }
         }
-        public function adddetails()
+        public function add_details()
         {
-                echo 'add';
+             
+        $this->load->view('profile');
         }
 }
 
