@@ -1,7 +1,4 @@
-<?php $name=$_SESSION['name'];
 
-
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -17,14 +14,14 @@
  <div class="container-fluid bg-dark">
  
 <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Hi welcome <?= $name?>
+  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Hi welcome admin</a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
-      <a class="nav-link" href="<?= base_url().'login/logout'?>">Sign out</a>
+      <a class="nav-link" href="<?= base_url().'admin/logout'?>">Sign out</a>
     </li>
   </ul>
 </nav>
@@ -35,46 +32,26 @@
       <div class="sidebar-sticky pt-3">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" href="<?= base_url().'upanel'?>">
+            <a class="nav-link active" href="<?= base_url().'admin/main'?>">
               <span data-feather="home"></span>
               Dashboard <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?= base_url().'upanel/add_details/'.$name?>">
+            <a class="nav-link" href="<?= base_url().'admin/view_users'?>">
               <span data-feather="file"></span>
-              Add Details
+              View Users
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?= base_url().'upanel/edit/'.$name?>">
-              <span data-feather="file"></span>
-              Edit Details
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?= base_url().'upanel/addpic/'.$name?>">
-              <span data-feather="file"></span>
-              Upload profile photo
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?= base_url().'upanel/changepic/'.$name?>">
-              <span data-feather="file"></span>
-              Change profile photo
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?= base_url().'upanel/status/'.$name?>">
-              <span data-feather="file"></span>
-              Check Status
-            </a>
-          </li>
+          
         </ul>
-       </div>
-      </nav>
-      
+
+      </div>
+    </nav>
     
+    
+    
+
     
     
     
